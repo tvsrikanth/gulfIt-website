@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     // Instantiate the Bootstrap carousel
     $('.multi-item-carousel').carousel({
         interval: false
@@ -22,4 +23,52 @@ $(document).ready(function () {
             next.children(':first-child').clone().appendTo($(this));
         }
     });
+
+    $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1008,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
+    });
+
+    // $(window).resize(function () {
+    //     $('.js-slider').not('.slick-initialized').slick('resize');
+    // });
+
+    // $(window).on('orientationchange', function () {
+    //     $('.js-slider').not('.slick-initialized').slick('resize');
+    // });
 });
+
