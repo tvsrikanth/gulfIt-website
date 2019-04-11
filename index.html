@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Gulf It</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <style>
+      
+      .multi-item-carousel .carousel-inner > .item {
+	 transition: 500ms ease-in-out left;
+}
+ .multi-item-carousel .carousel-inner .active.left {
+	 left: -25%;
+}
+ .multi-item-carousel .carousel-inner .active.right {
+	 left: 25%;
+}
+ .multi-item-carousel .carousel-inner .next {
+	 left: 25%;
+}
+ .multi-item-carousel .carousel-inner .prev {
+	 left: -25%;
+}
+ @media all and (transform-3d), (-webkit-transform-3d) {
+	 .multi-item-carousel .carousel-inner > .item {
+		 transition: 500ms ease-in-out left;
+		 transition: 500ms ease-in-out all;
+		 backface-visibility: visible;
+		 transform: none !important;
+	}
+}
+ .multi-item-carousel .carouse-control.left, .multi-item-carousel .carouse-control.right {
+	 background-image: none;
+}
+ 
+.item a .glyphicon-play-circle, .item a:hover h3 {
+display: none;
+}
+
+.item a:hover .glyphicon-play-circle{
+display: inline;
+}
+      </style>
+   </head>
+   <body>
+      <div class="main-container">
+         <header>
+            <nav class="navbar navbar-default">
+               <div class="container-fluid">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>                        
+                     </button>
+                     <a class="navbar-brand" href="index.html">
+                        <div class="logo">
+                           <img src="images/logo.jpg">
+                        </div>
+                        <!-- /.logo -->
+                     </a>
+                  </div>
+                  <div class="menu-bar collapse navbar-collapse" id="myNavbar">
+                     <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Resource</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <!-- <div class="submenu">
+            <ul class="nav-list">
+               <li><a href="#">FCASE</a></li>
+               <li><a href="#">NNT</a></li>
+               <li><a href="#">SILVER PEAK</a></li>
+               <li><a href="#">IMPERVA</a></li>
+               <li><a href="#">ARRAY</a></li>
+               <li><a href="#">SAILPOINT</a></li>
+               <li><a href="#">CYBERSPONSE</a></li>
+               <li><a href="#">ARCON</a></li>
+            </ul>
+         </div> -->
+         <marquee scrolldelay="200" class="event-list" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+            <a data-toggle="modal" data-target="#myModal" href="javascript(void)">Event 1</a>
+            <a data-toggle="modal" data-target="#myModal" href="javascript(void)">Event 2</a>
+            <a data-toggle="modal" data-target="#myModal" href="javascript(void)">Event 3</a>
+            <span class="" style="color: red; margin-right:4px; font-size: 18px">*</span><a data-toggle="modal" data-target="#myModal" href="javascript(void)">Event 4</a>
+         </marquee>
+         <div id="myCarousel" data-interval="false" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+               <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+               <div class="item active col-md-offset-2 col-md-8">
+                  <img src="images/slide1.png" class="img-responsive" alt="">
+               </div>
+               <div class="item col-md-offset-2 col-md-8">
+                  <img src="images/slide2.png" class="img-responsive" alt="">
+               </div>
+               <div class="item col-md-offset-2 col-md-8">
+                  <img src="images/slide3.png" class="img-responsive" alt="">
+               </div>
+               <div class="item col-md-offset-2 col-md-8">
+                     <img src="images/slide4.png" class="img-responsive" alt="">
+                  </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+            </a>
+         </div>
+         <div class="container"> 
+         <div class="row">
+               <div class="col-md-12">
+                 <div class="carousel slide multi-item-carousel" id="theCarousel">
+                   <div class="carousel-inner">
+                     <div class="item active">
+                       <div class="col-xs-3"><a href="#1"><img src="images/slide1.png" class="img-responsive"> <div class="carousel-caption">
+           <span class="btn btn-default glyphicon glyphicon-play-circle"></span>        
+           <h3>Video 1</h3>
+                 </div></a></div>
+                     </div>
+                     <div class="item">
+                       <div class="col-xs-3"><a href="#1"><img src="images/slide2.png" class="img-responsive">
+           <div class="carousel-caption">
+           <span class="btn btn-info glyphicon glyphicon-play-circle"></span>        
+           <h3>Video 2</h3>
+                 </div>
+           </a></div>
+                     </div>
+                     <div class="item">
+                       <div class="col-xs-3"><a href="#1"><img src="images/slide3.png" class="img-responsive">
+           <div class="carousel-caption">
+           <span class="btn btn-info glyphicon glyphicon-play-circle"></span>        
+           <h3>Video 3</h3>
+                 </div>
+           </a></div>
+                     </div>
+                     <!-- add  more items here -->
+                     <!-- Example item start:  -->
+                     
+                     <div class="item">
+                       <div class="col-xs-3"><a href="#1"><img src="images/slide4.png" class="img-responsive">
+           <div class="carousel-caption">
+           <span class="btn btn-info glyphicon glyphicon-play-circle"></span>        
+           <h3>Video 4</h3>
+                 </div>
+           </a></div>
+                     </div>
+                     
+                     <!--  Example item end -->
+                   </div>
+                   <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                   <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                 </div>
+               </div>
+             </div>
+            </div>
+        
+
+
+         <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+               <!-- Modal content-->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4 class="modal-title">Event</h4>
+                  </div>
+                  <div class="modal-body">
+                     <p>Description about event.</p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer>
+            <div class="footer-content">
+               <div class="row" style="margin: 0">
+                     <div class="col-md-3">
+                     <div class="headline"><h5>About Company</h4></div></div>
+                  <div class="col-md-3">
+                             <div class="headline"><h5>Connect With Us</h4></div>
+                             <!-- <ul class="list-unstyled contact-us-list">
+                                 <li><a href="#">Facebook</a><i class="fa fa-angle-right"></i></li>
+                                 <li><a href="#">Twitter</a><i class="fa fa-angle-right"></i></li>
+                                 <li><a href="#">Linkedin</a><i class="fa fa-angle-right"></i></li>
+                                 <li><a href="#">Google Plus</a><i class="fa fa-angle-right"></i></li>
+                             </ul> -->
+                         </div>
+                     <div class="col-md-3">
+                        <div class="headline"><h5>Contact Us</h4></div>
+                     </div>
+                     <div class="col-md-3">
+                           <div class="headline"><h5>Partners</h4></div>
+                     </div>
+              </div>
+            </div>
+           </div>
+           <div class="copyright" style="background: gray;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6" style="text-align: center;">                     
+                        <p style="margin: 0; padding: 5">COPYRIGHT © 2019 GULFIT. ALL RIGHTS RESERVED. 
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+         </footer>
+      </div>
+   </body>
+   <script>
+$(document).ready(function(){
+// Instantiate the Bootstrap carousel
+$('.multi-item-carousel').carousel({
+  interval: false
+});
+
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  for (var i=0;i<2;i++) {
+    next=next.next();
+    if (!next.length) {
+    	next = $(this).siblings(':first');
+  	}
+    
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});});
+   </script>
+</html>

@@ -1,0 +1,116 @@
+.event-list {
+  background: #15a1db;
+  padding: 5px;
+  justify-content: center;
+}
+.event-list a{
+ color: #fff;
+ padding-right: 50px;
+ font-weight: bold;
+}
+.main-container .navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+  margin: 0;
+}
+.main-container .menu-bar .navbar-nav li > a {
+ color: #49a2db;
+}
+.main-container .menu-bar .navbar-nav li > a:hover {
+ color: #fff;
+}
+.menu-bar li:hover {
+ background: #49a2db;
+}
+.menu-bar li > a:hover {
+ color: #fff;
+}
+.submenu ul > li {
+  float: left;
+  list-style: none;
+  border-right: 2px solid #15a1db;
+  background-color: #29557e;
+  padding: 2px 5px;
+}
+.submenu ul {
+ border-left: 2px solid #15a1db;
+ padding: 0;
+ margin-right: 10px;
+}
+.submenu ul > li a {
+ text-decoration: none;
+ padding: 5px;
+ font-size: 11px;
+ color: #fff;
+}
+.item img {
+max-width: 100%;
+  height: auto;
+} 
+.carousel.slide {
+  margin-top: -5px;
+}
+.footer-content {
+  background: #e2e2e2;
+  padding: 10px;
+}
+.footer-content h5 {
+  display: inline-block;
+  border-bottom: 2px solid #15a1db;
+}
+.footer-content ul {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-us-list a {
+  color: #15a1db;
+}
+.contact-us-list a:hover {
+  color: #29557e;
+}
+.main-container .carousel-caption {
+  bottom: 35%;
+} 
+
+@media(min-width:768px) {
+    .menu-bar .navbar-nav, .submenu .nav-list {
+      float:right
+    }
+    .main-container .navbar-header { 
+      height: 85px;
+    }
+    .main-container .navbar-brand {
+      padding-top: 8px;
+    }
+    .menu-bar.collapse.navbar-collapse {
+      padding-top: 18px;
+    }
+    .logo img {
+      height: auto;
+      width: 175px;
+   }
+}
+
+@media(max-width: 768px) {
+  .logo img {
+    width: 100px;  
+  }
+  .main-container .navbar-brand {
+    padding-top: 8px;
+  }
+}
+
+@media(max-width: 992px) {
+  .main-container .carousel-inner .item img{
+    height: auto;
+  }
+  .main-container .carousel-inner .item {
+    padding: 0;
+  }
+}
+@media(min-width: 992px) {
+  .main-container .carousel-inner .item img {
+    height: 420px;
+    padding-left: 10px;
+  }
+}
