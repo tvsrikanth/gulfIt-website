@@ -75,7 +75,8 @@ max-width: 100%;
   background: url("../images/pattern.jpg");
 }
 .video-list-carousel {
-  padding: 55px;
+  padding: 30px 55px 55px;
+  margin-right: 0;
 }
 .video-list .carousel-control{
   width: 0;
@@ -86,8 +87,27 @@ max-width: 100%;
 .video-list .carousel-control.right {
   right: -15px;
 }
-
-
+.video-list .glyphicon.glyphicon-chevron-left, .video-list .glyphicon.glyphicon-chevron-right {
+font-size: 18px;
+padding: 5px;
+background: #fff;
+border-radius: 50%;
+color: transparent;
+margin-right: 0;
+}
+.video-list .glyphicon.glyphicon-chevron-left{
+  left: -15px;
+}
+.video-list .glyphicon.glyphicon-chevron-right{
+  right: -18px;
+}
+.video-carousel-header {
+  padding-top: 20px;
+  font-size: 25px; 
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
 @media(min-width:768px) {
     .menu-bar .navbar-nav, .submenu .nav-list {
       float:right
