@@ -9,73 +9,6 @@
       <link rel="stylesheet" href="css/style.css">
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
-      <style>
-         #myModalVideo .modal-body {
-         position:relative;
-         padding:0px;
-         }
-         #myModalVideo .close {
-         position:absolute;
-         right:-30px;
-         top:0;
-         z-index:999;
-         font-size:2rem;
-         font-weight: normal;
-         color:#fff;
-         opacity:1;
-         }
-         @media(min-width: 768px){
-         .multi-item-carousel .carousel-inner > .item {
-         transition: 500ms ease-in-out left;
-         }
-         .multi-item-carousel .carousel-inner .active.left {
-         left: -25%;
-         }
-         .multi-item-carousel .carousel-inner .active.right {
-         left: 25%;
-         }
-         .multi-item-carousel .carousel-inner .next {
-         left: 25%;
-         }
-         .multi-item-carousel .carousel-inner .prev {
-         left: -25%;
-         }
-         }
-         @media(max-width: 768px){
-         .multi-item-carousel .carousel-inner > .item {
-         transition: 500ms ease-in-out left;
-         }
-         .multi-item-carousel .carousel-inner .active.left {
-         left: -50%;
-         }
-         .multi-item-carousel .carousel-inner .active.right {
-         left: 50%;
-         }
-         .multi-item-carousel .carousel-inner .next {
-         left: 50%;
-         }
-         .multi-item-carousel .carousel-inner .prev {
-         left: -50%;
-         }
-         }
-         @media all and (transform-3d), (-webkit-transform-3d) {
-         .multi-item-carousel .carousel-inner > .item {
-         transition: 500ms ease-in-out left;
-         transition: 500ms ease-in-out all;
-         backface-visibility: visible;
-         transform: none !important;
-         }
-         }
-         .multi-item-carousel .carouse-control.left, .multi-item-carousel .carouse-control.right {
-         background-image: none;
-         }
-         .item a .glyphicon-play-circle, .item a:hover .v-sub-header {
-         display: none;
-         }
-         .item a:hover .glyphicon-play-circle{
-         display: inline;
-         }
-      </style>
    </head>
    <body>
       <div class="main-container">
@@ -168,22 +101,9 @@
                         <div class="item active">
                            <div class="col-sm-3 col-xs-6">
                               <a href="#1" class="video-btn"  data-toggle="modal" data-target="#myModalVideo">
-                                 <div class="v-tile" style="
-                                    position: absolute;
-                                    width: 90%;
-                                    height: 100%;
-                                    text-align: center;
-                                    ">
-                                    <div class="v-content" style="
-                                       position: relative;
-                                       /* margin: 0 auto; */
-                                       top: 50%;
-                                       transform: translateY(-50%);
-                                       ">
-                                       <div class="btn btn-default glyphicon glyphicon-play-circle" style="
-                                          position: relative;
-                                          margin: 0 auto;
-                                          "></div>
+                                 <div class="v-title">
+                                    <div class="v-content">
+                                       <div class="glyphicon glyphicon-play-circle"></div>
                                        <span class="v-sub-header">
                                        video 1
                                        </span>
@@ -196,22 +116,9 @@
                         <div class="item">
                            <div class="col-sm-3 col-xs-6">
                               <a href="#1" class="video-btn"  data-toggle="modal" data-target="#myModalVideo"  >
-                                 <div class="v-tile" style="
-                                    position: absolute;
-                                    width: 90%;
-                                    height: 100%;
-                                    text-align: center;
-                                    ">
-                                    <div class="v-content" style="
-                                       position: relative;
-                                       /* margin: 0 auto; */
-                                       top: 50%;
-                                       transform: translateY(-50%);
-                                       ">
-                                       <div class="btn btn-default glyphicon glyphicon-play-circle" style="
-                                          position: relative;
-                                          margin: 0 auto;
-                                          "></div>
+                                 <div class="v-title">
+                                    <div class="v-content">
+                                       <div class="glyphicon glyphicon-play-circle"></div>
                                        <span class="v-sub-header">
                                        video 2
                                        </span>
@@ -224,22 +131,9 @@
                         <div class="item">
                            <div class="col-sm-3 col-xs-6">
                               <a href="#1" class="video-btn"  data-toggle="modal" data-target="#myModalVideo">
-                                 <div class="v-tile" style="
-                                    position: absolute;
-                                    width: 90%;
-                                    height: 100%;
-                                    text-align: center;
-                                    ">
-                                    <div class="v-content" style="
-                                       position: relative;
-                                       /* margin: 0 auto; */
-                                       top: 50%;
-                                       transform: translateY(-50%);
-                                       ">
-                                       <div class="btn btn-default glyphicon glyphicon-play-circle" style="
-                                          position: relative;
-                                          margin: 0 auto;
-                                          "></div>
+                                 <div class="v-title">
+                                    <div class="v-content">
+                                       <div class="glyphicon glyphicon-play-circle"></div>
                                        <span class="v-sub-header">
                                        video 3
                                        </span>
@@ -249,26 +143,12 @@
                               </a>
                            </div>
                         </div>
-                        <!-- add  more items here -->
-                        <!-- Example item start:  -->
                         <div class="item">
                            <div class="col-sm-3 col-xs-6">
                               <a href="#1" class="video-btn"  data-toggle="modal" data-target="#myModalVideo">
-                                 <div class="v-tile" style="
-                                    position: absolute;
-                                    width: 90%;
-                                    height: 100%;
-                                    text-align: center;
-                                    ">
-                                    <div class="v-content" style="
-                                       position: relative;
-                                       /* margin: 0 auto; */
-                                       top: 50%;
-                                       transform: translateY(-50%);
-                                       ">
-                                       <button type="button" class="btn btn-default glyphicon glyphicon-play-circle"  style="
-                                          position: relative;
-                                          margin: 0 auto;"></button>
+                                 <div class="v-title">
+                                    <div class="v-content">
+                                       <div class="glyphicon glyphicon-play-circle"></div>
                                        <span class="v-sub-header">
                                        video 4
                                        </span>
@@ -278,7 +158,6 @@
                               </a>
                            </div>
                         </div>
-                        <!--  Example item end -->
                      </div>
                      <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
                      <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
