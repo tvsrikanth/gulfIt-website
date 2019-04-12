@@ -76,7 +76,8 @@ max-width: 100%;
 }
 .video-list-carousel {
   padding: 30px 55px 55px;
-  margin-right: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 .video-list .carousel-control{
   width: 0;
@@ -134,7 +135,7 @@ display: none;
 display: inline;
 font-size: 30px;
 color: #7b6e6e;
-}
+} 
 .multi-item-carousel .v-title {
   position: absolute;
   width: 90%;
@@ -149,6 +150,9 @@ color: #7b6e6e;
 .multi-item-carousel .glyphicon-play-circle {
   position: relative;
   margin: 0 auto;
+}
+.multi-item-carousel .carousel-indicators {
+  bottom: -45px;
 }
 
 @media(min-width:768px) {
