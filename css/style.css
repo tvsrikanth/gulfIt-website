@@ -154,7 +154,113 @@ color: #7b6e6e;
 .multi-item-carousel .carousel-indicators {
   bottom: -45px;
 }
-
+.all_prod_img {
+  width: 100%;
+  padding: 10%;
+  text-align: center;
+}
+.all_prod_img img {
+  width: 75%;
+}
+.all_prod_content {
+  background-color: #f2f3f3;
+  padding: 10px 25px;
+}
+.all_prod_list a:hover {
+  text-decoration: none !important;
+}
+.all_prod_list {
+  border: 1px solid #cccccc;
+  margin-right: 1%;
+  width: 24%;
+  max-width: 24%;
+  margin-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.contact-caption {
+  background: #3a9dca;
+  border-top: 1px solid #13849c;
+}
+.contact-heading h2 {
+  color: #fff;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact-info {
+  padding-left: 40px;
+}
+.info-detail {
+  border-top: 1px solid #53cde5;
+  padding-top: 15px;
+}
+.contact-info ul {
+  margin: 0;
+  padding: 0;
+}
+.contact-info ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  list-style: none;
+}
+.contact-info i.fa {
+  font-size: 16px;
+  padding-right: 12px;
+  width: 25px;
+  height: 38px;
+}
+.contact-info ul li span {
+  font-weight: bold;
+} 
+.contact-info h3, .contact-form h3 {
+  padding-left: 0;
+  font-size: 21px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid #13849c;
+  padding-bottom: 12px;
+  margin-bottom: 0;
+}
+.form {
+  border-top: 1px solid #53cde5;
+  padding-top: 15px;
+  text-align: right;
+}
+.contact-form input {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  font-size: 13px;
+  color: #084a5c;
+  font-family: 'Open Sans', sans-serif;
+  padding: 12px;
+  border: 0;
+  margin-bottom: 12px;
+}
+.contact-form textarea {
+  font-family: 'Open Sans', sans-serif;
+  padding: 12px;
+  width: 100%;
+  height: 140px;
+  border: 0;
+  margin-bottom: 12px;
+}
+.contact_with_us ul li i {
+  font-size: 1em;
+  line-height: 1.3em;
+  color: #29557e;
+  padding: 10px;
+  float: left;
+  background-color: #dfe5eb;
+  width: 40px !important;
+  height: 40px;
+  margin-right: 10px;
+  text-align: center;
+  transition: all 0.3s;
+}
 @media(min-width:768px) {
     .menu-bar .navbar-nav, .submenu .nav-list {
       float:right
