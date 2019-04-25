@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <title>Gulf It</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.4/plyr.css" />
+    <script src="./js/swiper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.plyr.io/3.5.4/plyr.js"></script>
+</head>
+<style>
+    [type=radio] {
+        display: none;
+    }
+
+    #slider {
+        height: 35vw;
+        position: relative;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+    }
+
+    #slider label {
+        margin: auto;
+        width: 60%;
+        height: 100%;
+        border-radius: 4px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+        transition: transform 0.4s ease;
+    }
+
+    #s1:checked~#slide4,
+    #s2:checked~#slide5,
+    #s3:checked~#slide1,
+    #s4:checked~#slide2,
+    #s5:checked~#slide3 {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+        transform: translate3d(-30%, 0, -200px);
+    }
+
+    #s1:checked~#slide5,
+    #s2:checked~#slide1,
+    #s3:checked~#slide2,
+    #s4:checked~#slide3,
+    #s5:checked~#slide4 {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+        transform: translate3d(-15%, 0, -100px);
+    }
+
+    #s1:checked~#slide1,
+    #s2:checked~#slide2,
+    #s3:checked~#slide3,
+    #s4:checked~#slide4,
+    #s5:checked~#slide5 {
+        box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+        transform: translate3d(0, 0, 0);
+    }
+
+    #s1:checked~#slide2,
+    #s2:checked~#slide3,
+    #s3:checked~#slide4,
+    #s4:checked~#slide5,
+    #s5:checked~#slide1 {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+        transform: translate3d(15%, 0, -100px);
+    }
+
+    #s1:checked~#slide3,
+    #s2:checked~#slide4,
+    #s3:checked~#slide5,
+    #s4:checked~#slide1,
+    #s5:checked~#slide2 {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+        transform: translate3d(30%, 0, -200px);
+    }
+
+    #slide1 {
+        background: #00BCD4
+    }
+
+    #slide2 {
+        background: #4CAF50
+    }
+
+    #slide3 {
+        background: #CDDC39
+    }
+
+    #slide4 {
+        background: #FFC107
+    }
+
+    #slide5 {
+        background: #FF5722
+    }
+
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 150px;
+
+    }
+</style>
+
+<body>
+    <div class="main-container">
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <div class="logo">
+                                <img src="images/logo.jpg">
+                            </div>
+                            <!-- /.logo -->
+                        </a>
+                    </div>
+                    <div class="menu-bar collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="pages/products.html">Products</a></li>
+                            <li><a href="#">Demo</a></li>
+                            <li><a href="#">Resource</a></li>
+                            <li><a href="pages/contact.html">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="slider">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3" checked>
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+            <label for="s1" id="slide1">
+                <img src="images/slide1.png" class="img-responsive" alt="">
+            </label>
+            <label for="s2" id="slide2">
+                <img src="images/slide2.png" class="img-responsive" alt="">
+            </label>
+            <label for="s3" id="slide3">
+                <img src="images/slide3.png" class="img-responsive" alt="">
+            </label>
+            <label for="s4" id="slide4">
+                <img src="images/slide4.png" class="img-responsive" alt="">
+            </label>
+            <label for="s5" id="slide5">
+                <img src="images/slide2.png" class="img-responsive" alt="">
+            </label>
+        </section>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/slide1.png" class="img-responsive" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div class="plyr__video-embed" id="player">
+                        <iframe
+                            src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                            allowfullscreen allowtransparency allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide3.png" class="img-responsive" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide4.png" class="img-responsive" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide1.png" class="img-responsive" alt="">
+                </div>
+                <!-- <div class="swiper-slide">
+                    <img src="images/slide3.png" class="img-responsive" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide4.png" class="img-responsive" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide1.png" class="img-responsive" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide2.png" class="img-responsive" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide3.png" class="img-responsive" alt="">
+                </div> -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Initialize Swiper -->
+        <script>
+            const player = new Plyr('#player');
+
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+
+            swiper.on('slideChange', function () {
+                player.stop();
+            });
+        </script>
+</body>
+
+
+</html>
