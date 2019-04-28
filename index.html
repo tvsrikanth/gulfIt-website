@@ -51,7 +51,7 @@
             top: 50%;
             z-index: 2;
             }
-            #mainSwiper .swiper-slide {
+            #mainSwiper .swiper-slide, .product-list .swiper-slide {
             text-align: center;
             font-size: 18px;
             background: #fff;
@@ -82,6 +82,13 @@
             #mainSwiper .swiper-pagination-bullet-active {
             color: #fff;
             background: #007aff;
+            }
+            .product-list .swiper-button-prev, .product-list .swiper-button-next {
+                display: none;
+            }
+            .product-list {
+                padding: 45px 0px;
+                border-top: 1px solid red;
             }
         </style>
     </head>
@@ -228,6 +235,24 @@
                     </div>
                   </div>
             </div>
+            <!-- prduct list-->
+            <div class="swiper-container product-list">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="http://gulfitd.com/uploadfolder/imperva.jpg" width="100%"></div>
+                  <div class="swiper-slide"><img src="http://gulfitd.com/uploadfolder/sail_point_logo1.jpg" width="100%"></div>
+                  <div class="swiper-slide"><img src="http://gulfitd.com/uploadfolder/fcase_logo.jpg" width="100%"></div>
+                  <div class="swiper-slide"><img src="http://gulfitd.com/uploadfolder/nnt-logo_12.png" width="100%"></div>
+                  <div class="swiper-slide"><img src="http://gulfitd.com/uploadfolder/silver_peak.jpg" width="100%"></div>
+                  <div class="swiper-slide"><img src="http://gulfitd.com/uploadfolder/array_mlogo.jpg" width="100%"></div>
+                  <div class="swiper-slide"><img src="http://gulfitd.com/uploadfolder/cybersponse.jpg" width="100%"></div>
+                  <div class="swiper-slide"><img src="http://gulfitd.com/uploadfolder/arcon.jpg" width="100%"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
             <footer id="contact">
                 <div class="contact-caption clearfix">
                      <div id="contact-us" class="contact-caption clearfix">
@@ -378,10 +403,23 @@
            });
            $('#leftArrow').on('click', () => {
               swiper.slidePrev(600);
-           })
+           });
            $('#rightArrow').on('click', () => {
               swiper.slideNext(600);
-           })
+           });
+
+           var swiper = new Swiper('.product-list', {
+                autoHeight: true,
+                slidesPerView: 5,
+                spaceBetween: 30,
+                slidesPerGroup: 5,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            });
+
+
         });
     </script>
 </html>
