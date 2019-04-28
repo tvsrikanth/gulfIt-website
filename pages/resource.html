@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gulf It</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <header id="navigation">
+            </header>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 partners-title">
+                            <p>Resource</p>
+                        </div>
+                    </div>
+                    <div class="partners-content">
+                        <p>Content Required !!!!!!</p>
+                    </div>
+                </div>
+                <!--container--> 
+            </div>
+            <footer id="contact">
+                <div id="contact-us" class="contact-caption clearfix">      
+                </div>
+                <div class="copyright" style="background: gray;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-6" style="text-align: center;">
+                                <p style="margin: 0; padding: 5">COPYRIGHT © 2019 GULFIT. ALL RIGHTS RESERVED.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="../js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+         $('.menu-bar .active').each(function() {
+            $(this).removeClass();
+         });
+         $('.menu-bar .resource').each(function() {
+            $(this).find('a').addClass('active');
+            $(this).find('a').attr("href", "javascript:void(0)");
+         })
+       });
+    </script>
+</html>
