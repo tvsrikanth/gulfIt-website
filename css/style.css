@@ -209,14 +209,22 @@
   border: 0;
   margin-bottom: 12px;
 }
-.partners-info {
-  margin-bottom: 30px;
-}
 .partners-info .contact-form input {
   margin-bottom: 20px;
 }
+.demo-request-info {
+  background: #a1a1a1;
+  margin-bottom: 30px;
+}
+.demo-request-info .contact-form input, .demo-request-info select{
+  margin-bottom: 20px;
+}
+.demo-request-info .contact-form textarea {
+  height: auto
+}
 .contact-caption.partners-info {
   background: #a1a1a1;
+  margin-bottom: 30px;
 }
 .contact-form select {
   color: #747374;
@@ -282,6 +290,31 @@
   color: #fff;
   font-size: 15px;
 }
+.swiper-slide-active .animation-text{
+  -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+.animation-text{
+  color: #fff;
+}
+.swiper-slide-active .animation-text.left-text {
+  text-align: left;
+  bottom: 40px;
+  left: 70px;
+}
+.animation-text.left-text h1, .animation-text.left-text h3 {
+  margin: 0;
+}
+.animation-text.right-text {
+  top: 70px;
+  right: 75px;
+  text-align: left;
+}
+.animation-text.left-text h1 {
+color: #d36ffe;
+}
 
 @media(min-width:768px) {
     .menu-bar .navbar-nav, .submenu .nav-list {
@@ -334,5 +367,15 @@
 }
 
 
+/*animation text*/
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
 
 

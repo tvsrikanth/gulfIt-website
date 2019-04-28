@@ -7,6 +7,7 @@
         <link rel="shortcut icon" href="images/favicon.ico">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/style.css">
                 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -139,19 +140,26 @@
             <div id="mainSwiper" class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="images/sli1.jpg" width="100%" height="650px">
+                        <img src="images/slide1.jpg" width="100%" height="450px">
+                        <div class="animation-text" style="position:absolute">
+                              <h1>Exclusive </h1><h1> Value Added Distributor</h1>
+                        </div>
+                     </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide2.jpg" width="100%" height="450px">
+                        <div class="animation-text " style="position:absolute; left: 15%">
+                           <h2>Security is all about THE Identity</h2>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/sli2.jpg" width="100%" height="650px">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/sli3.jpg" width="100%" height="650px">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/sli4.jpg" width="100%" height="650px">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/sli2.jpg" width="100%" height="650px">
+                        <img src="images/slide3.jpg" width="100%" height="450px">
+                        <div class="animation-text left-text" style="position:absolute">
+                              <h3>A user with </br> privileged Access </br> holds the keys to the</h3>
+                              <h1>KINGDOM</h1>
+                           </div>
+                        <div class="animation-text right-text" style="position:absolute">
+                           <h3>Discover, Manage, Audit,  </br> and Monitor <span class="" style="color:#85f8fe">Privileged</span> </br>Accounts of all types.</h3>
+                        </div>
                     </div>
                 </div>
                 <!-- Add Pagination -->
@@ -268,7 +276,7 @@
                            </div>
                            <div class="col-md-6 col-md-offset-1 contact-form">
                                <h3>leave us a message</h3>
-                               <form class="form"> <input class="name" type="text" placeholder="Name"> <input class="email" type="email" placeholder="Email"> <input class="phone" type="text" placeholder="Phone No:"> <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea> <input class="submit-btn" type="submit" value="SUBMIT"> </form>
+                               <form class="form"> <input class="name" type="text" placeholder="Name"> <input class="email" type="email" placeholder="Email"> <input class="phone" type="text" placeholder="Phone No:"> <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea> <input class="submit-btn" type="submit" value="SUBMIT" style="width:100px"> </form>
                            </div>
                        </div>
                 </div>
@@ -322,19 +330,16 @@
               autoHeight: true,
               pagination: {
                  el: '.swiper-pagination',
-                 clickable: true,
-                 renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + '</span>';
-                 },
+                 clickable: true
               },
               navigation: {
                  nextEl: '.swiper-button-next',
                  prevEl: '.swiper-button-prev',
               },
-              autoplay: {
-                 delay: 3000,
-                 disableOnInteraction: false
-              },
+            //   autoplay: {
+            //      delay: 3000,
+            //      disableOnInteraction: false
+            //   },
            });
            var swiper = new Swiper('#videoSwiper', {
               navigation: {
