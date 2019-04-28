@@ -1,400 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <title>Gulf It</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="shortcut icon" href="images/favicon.ico">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="stylesheets/screen.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> 
-   <script src="js/bootstrap.min.js"></script>
-</head>
-
-<body>
-   <div class="main-container">
-      <header>
-         <nav class="navbar navbar-default">
-            <div class="container-fluid">
-               <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="index.html">
-                     <div class="logo">
-                        <img src="images/logo.jpg">
-                     </div>
-                     <!-- /.logo -->
-                  </a>
-               </div>
-               <div class="menu-bar collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav">
-                     <li><a  class="active" href="#">Home</a></li>
-                     <li><a href="pages/products.html">Products</a></li>
-                     <li><a href="#">Demo</a></li>
-                     <li><a href="#">Resource</a></li>
-                     <li><a href="contact">Contact Us</a></li>
-                     <li><a href="#">About Us</a></li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
-      </header>
-      <!-- <div class="submenu">
-            <ul class="nav-list">
-               <li><a href="#">FCASE</a></li>
-               <li><a href="#">NNT</a></li>
-               <li><a href="#">SILVER PEAK</a></li>
-               <li><a href="#">IMPERVA</a></li>
-               <li><a href="#">ARRAY</a></li>
-               <li><a href="#">SAILPOINT</a></li>
-               <li><a href="#">CYBERSPONSE</a></li>
-               <li><a href="#">ARCON</a></li>
-            </ul>
-            </div> -->
-      <marquee scrolldelay="200" class="event-list" behavior="scroll" direction="left" onmouseover="this.stop();"
-         onmouseout="this.start();">
-         <a data-toggle="modal" data-target="#myModal" href="javascript(void)">Event 1</a>
-         <a data-toggle="modal" data-target="#myModal" href="javascript(void)">Event 2</a>
-         <a data-toggle="modal" data-target="#myModal" href="javascript(void)">Event 3</a>
-         <span class="" style="color: red; margin-right:4px; font-size: 18px">*</span><a data-toggle="modal"
-            data-target="#myModal" href="javascript(void)">Event 4</a>
-      </marquee>
+    <head>
+        <title>Gulf It</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+                
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/swiper.min.css">
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.5.4/plyr.css" />
       
-      <!-- SVG Arrows -->
-		<div class="svg-wrap">
-			<svg width="64" height="64" viewBox="0 0 64 64">
-				<path id="arrow-left" d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z" />
-			</svg>
-			<svg width="64" height="64" viewBox="0 0 64 64">
-				<path id="arrow-right" d="M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z" />
-			</svg>
-		</div>
-
-		<div class="sleekslider">
-			<!-- Slider Pages -->
-			<div class="slide active bg-1">
-				<div class="slide-container">
-					<div class="slide-content">
-						<h1>Slide 1 Content Here</h1>	
-					</div>
-				</div>
-			</div>
-			<div class="slide bg-2">
-				<div class="slide-container">
-					<div class="slide-content">
-						<h1>Slide 2 Some Content Here</h1>	
-					</div>
-				</div>				
-			</div>
-			<div class="slide bg-3">
-				<div class="slide-container">
-					<div class="slide-content">
-						<h1>Slide 3 Content Here</h1>	
-					</div>
-				</div>				
-			</div>
-			<div class="slide bg-4">
-				<div class="slide-container">
-					<div class="slide-content">
-						<h1>Slide 4 Some Content Here</h1>	
-					</div>
-				</div>				
-			</div>
-			<div class="slide bg-5">
-				<div class="slide-container">
-					<div class="slide-content">
-						<h1>Slide 5 Content Here</h1>	
-					</div>
-				</div>				
-			</div>
-
-			<!-- Navigation Arrows with Thumbnails -->
-			<nav class="nav-split">
-				<a class="prev" href="">
-					<span class="icon-wrap"><svg class="icon" width="22" height="22" viewBox="0 0 64 64"><use xlink:href="#arrow-left" /></svg></span>
-					<div>
-						<h3>test</h3>
-						<img alt="Previous thumb"/>
-					</div>
-				</a>
-				<a class="next" href="">
-					<span class="icon-wrap"><svg class="icon" width="22" height="22" viewBox="0 0 64 64"><use xlink:href="#arrow-right" /></svg></span>
-					<div>
-						<h3>test</h3>
-						<img alt="Next thumb"/>
-					</div>
-				</a>
-			</nav>
-
-			<!-- Pagination -->
-			<nav class="pagination">
-				<span class="current"></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</nav>
-
-			<!-- Navigation Tabs -->
-			<nav class="tabs">
-				<div class="tab-container">
-					<ul>
-						<li class="current"><a href="javascript:void(0)"><span>01</span> Slide</a></li>
-						<li><a href="javascript:void(0)"><span>02</span> Slide</a></li>
-						<li><a href="javascript:void(0)"><span>03</span> Slide</a></li>
-						<li><a href="javascript:void(0)"><span>04</span> Slide</a></li>
-						<li><a href="javascript:void(0)"><span>05</span> Slide</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-
-		<!-- JavaScripts -->
-		
-		<script type="text/javascript" src="javascripts/sleekslider.min.js"></script>
-		<script type="text/javascript" src="javascripts/app.js"></script>
-
-
-
-
-      <div class="video-list">
-         <div class="video-carousel-header">
-            <p>Title</p>
-         </div>
-         <div class="row video-list-carousel">
-            <div class="col-md-12">
-               <div class="carousel slide multi-item-carousel" id="theCarousel">
-                 
-                  <ol class="carousel-indicators">
-                     <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
-                     <li data-target="#theCarousel" data-slide-to="1"></li>
-                     <li data-target="#theCarousel" data-slide-to="2"></li>
-                     <li data-target="#theCarousel" data-slide-to="3"></li>
-                  </ol>
-                 
-                  <div class="carousel-inner">
-                     <div class="item active">
-                        <div class="col-sm-3 col-xs-6">
-                           <a href="#1" class="video-btn" data-toggle="modal" data-target="#myModalVideo">
-                              <div class="v-title">
-                                 <div class="v-content">
-                                    <div class="glyphicon glyphicon-play-circle"></div>
-                                    <span class="v-sub-header">
-                                       video 1
-                                    </span>
-                                 </div>
-                              </div>
-                              <img src="images/slide1.png" class="img-responsive">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="col-sm-3 col-xs-6">
-                           <a href="#1" class="video-btn" data-toggle="modal" data-target="#myModalVideo">
-                              <div class="v-title">
-                                 <div class="v-content">
-                                    <div class="glyphicon glyphicon-play-circle"></div>
-                                    <span class="v-sub-header">
-                                       video 2
-                                    </span>
-                                 </div>
-                              </div>
-                              <img src="images/slide2.png" class="img-responsive">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="col-sm-3 col-xs-6">
-                           <a href="#1" class="video-btn" data-toggle="modal" data-target="#myModalVideo">
-                              <div class="v-title">
-                                 <div class="v-content">
-                                    <div class="glyphicon glyphicon-play-circle"></div>
-                                    <span class="v-sub-header">
-                                       video 3
-                                    </span>
-                                 </div>
-                              </div>
-                              <img src="images/slide3.png" class="img-responsive">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="col-sm-3 col-xs-6">
-                           <a href="#1" class="video-btn" data-toggle="modal" data-target="#myModalVideo">
-                              <div class="v-title">
-                                 <div class="v-content">
-                                    <div class="glyphicon glyphicon-play-circle"></div>
-                                    <span class="v-sub-header">
-                                       video 4
-                                    </span>
-                                 </div>
-                              </div>
-                              <img src="images/slide4.png" class="img-responsive">
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i
-                        class="glyphicon glyphicon-chevron-left"></i></a>
-                  <a class="right carousel-control" href="#theCarousel" data-slide="next"><i
-                        class="glyphicon glyphicon-chevron-right"></i></a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Modal -->
-      <div class="modal fade" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-               <div class="modal-body">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-                  <!-- 16:9 aspect ratio -->
-                  <div class="embed-responsive embed-responsive-16by9">
-                     <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                        allow="autoplay"></iframe>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="modal fade" id="myModal" role="dialog">
-         <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Event</h4>
-               </div>
-               <div class="modal-body">
-                  <p>Description about event.</p>
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-               </div>
-            </div>
-         </div>
-      </div>
-   <footer id="contact">
-         <div class="contact-caption clearfix">
-               <div class="contact-heading text-center">
-                  <h2>contact us</h2>
-               </div>
-      
-               <div class="col-md-5 contact-info text-left">
-                  <h3>contact information</h3>
-                  <div class="info-detail">
-                     <ul><li><i class="fa fa-calendar"></i><span>Monday - Friday:</span> 9:30 AM to 6:30 PM</li></ul>
-                     <ul><li><i class="fa fa-map-marker"></i><span>Address:</span> Gulf Network Distribution
-                        Building 11, Dubai Internet City</li></ul>
-                     <ul><li><i class="fa fa-phone"></i><span>Phone:</span> +971 4 454 2058</li></ul>
-                     <ul><li><i class="fa fa-fax"></i><span>Fax:</span> +971 4 454 2058</li></ul>
-                     <ul><li><i class="fa fa-envelope"></i><span>Email:</span> info@gulfit.com</li></ul>
-                     <div class="contact_with_us">         
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-      
-      
-               <div class="col-md-6 col-md-offset-1 contact-form">
-                  <h3>leave us a message</h3>
-      
-                  <form class="form">
-                     <input class="name" type="text" placeholder="Name">
-                     <input class="email" type="email" placeholder="Email">
-                     <input class="phone" type="text" placeholder="Phone No:">
-                     <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                     <input class="submit-btn" type="submit" value="SUBMIT">
-                  </form>
-               </div>
-            </div>
-   <div class="copyright" style="background: gray;">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-offset-3 col-md-6" style="text-align: center;">
-               <p style="margin: 0; padding: 5">COPYRIGHT © 2019 GULFIT. ALL RIGHTS RESERVED.
-               </p>
-            </div>
-         </div>
-      </div>
-   </div>
-   </footer>
-   </div>
-</body>
-<script>
-   $(document).ready(function () {
-      var defaultSlideSize = 4;
-      if ($(window).width() < 768) {
-         defaultSlideSize = 2;
-      }
-      // Instantiate the Bootstrap carousel
-      $('.multi-item-carousel').carousel({
-         interval: false
-      });
-
-      // for every slide in carousel, copy the next slide's item in the slide.
-      // Do the same for the next, next item.
-      $('.multi-item-carousel .item').each(function () {
-         var next = $(this).next();
-         if (!next.length) {
-            next = $(this).siblings(':first');
-         }
-         next.children(':first-child').clone().appendTo($(this));
-
-         for (var i = 0; i < (defaultSlideSize - 2); i++) {
-            next = next.next();
-            if (!next.length) {
-               next = $(this).siblings(':first');
+        <script src="./js/swiper.min.js"></script>
+        <script src="https://cdn.plyr.io/3.5.4/plyr.js"></script>
+        <style>
+            #videoSwiper.swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
             }
-
-            next.children(':first-child').clone().appendTo($(this));
-         }
-      });
-
-
-      // Gets the video src from the data-src on each button
-
-      var $videoSrc;
-      $('.video-btn').click(function () {
-         $videoSrc =
-            "https://d14pr3cu5atb0x.cloudfront.net/cms/affiliate-business-video-company-overview-b5763a2620.mp4";
-      });
-      console.log($videoSrc);
-
-
-
-      // when the modal is opened autoplay it  
-      $('#myModalVideo').on('shown.bs.modal', function (e) {
-
-         // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-         $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-      })
-
-
-
-      // stop playing the youtube video when I close the modal
-      $('#myModalVideo').on('hide.bs.modal', function (e) {
-         // a poor man's stop video
-         $("#video").attr('src', '');
-      });
-   });
-   
-</script>
-
+            .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 600px;
+            height: 250px;
+            -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent),
+            color-stop(40%, transparent), to(rgba(255, 255, 255, 0.2)));
+            }
+            /* .swiper-slide-active {
+            top: 30px;
+            } */
+            .swiper-slide-shadow-left,
+            .swiper-slide-shadow-right {
+            opacity: 1 !important;
+            pointer-events: none;
+            }
+            /* swiper arrows */
+            #leftArrow {
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+            }
+            #rightArrow {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            z-index: 2;
+            }
+            #mainSwiper .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            }
+            #mainSwiper .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color: #000;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.2);
+            }
+            #mainSwiper .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #007aff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-container">
+            <header>
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">
+                                <div class="logo">
+                                    <img src="images/logo.jpg">
+                                </div>
+                                <!-- /.logo -->
+                            </a>
+                        </div>
+                        <div class="menu-bar collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a class="active" href="#">Home</a></li>
+                                <li><a href="pages/products.html">Products</a></li>
+                                <li><a href="#">Demo</a></li>
+                                <li><a href="#">Resource</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                                <li><a href="pages/about-us.html">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- <div class="submenu">
+                <ul class="nav-list">
+                   <li><a href="#">FCASE</a></li>
+                   <li><a href="#">NNT</a></li>
+                   <li><a href="#">SILVER PEAK</a></li>
+                   <li><a href="#">IMPERVA</a></li>
+                   <li><a href="#">ARRAY</a></li>
+                   <li><a href="#">SAILPOINT</a></li>
+                   <li><a href="#">CYBERSPONSE</a></li>
+                   <li><a href="#">ARCON</a></li>
+                </ul>
+                </div> -->
+            <marquee scrolldelay="200" class="event-list" behavior="scroll" direction="left" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                <a data-toggle="modal" data-target="#myModal" href="javascript(void)">Event 1</a>
+                <a data-toggle="modal" data-target="#myModal" href="javascript(void)">Event 2</a>
+                <a data-toggle="modal" data-target="#myModal" href="javascript(void)">Event 3</a>
+                <span class="" style="color: red; margin-right:4px; font-size: 18px">*</span><a data-toggle="modal"
+                    data-target="#myModal" href="javascript(void)">Event 4</a>
+            </marquee>
+            <div id="mainSwiper" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/sli1.jpg" width="100%" height="650px">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/sli2.jpg" width="100%" height="650px">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/sli3.jpg" width="100%" height="650px">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/sli4.jpg" width="100%" height="650px">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/sli2.jpg" width="100%" height="650px">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- Swiper -->
+            <div id="videoSwiper" class="swiper-container video-list">
+                <div id="leftArrow"><i class="fa fa-chevron-left" style="font-size: -webkit-xxx-large;padding-left: 15px"></i>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video class="js-player" playsinline controls>
+                            <source src="./assets/videos/About DomainTools.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="js-player" data-plyr-config='{ "autopause": "true" }' playsinline controls>
+                            <source src="./assets/videos/ArrayNetworks.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="js-player" data-plyr-config='{ "autopause": "true" }' playsinline controls>
+                            <source src="./assets/videos/BT.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="js-player" data-plyr-config='{ "autopause": "true" }' playsinline controls>
+                            <source src="./assets/videos/CyberBit-SOC3d.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="js-player" data-plyr-config='{ "autopause": "true" }' playsinline controls>
+                            <source src="./assets/videos/Fcase.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="js-player" data-plyr-config='{ "autopause": "true" }' playsinline controls>
+                            <source src="./assets/videos/Imperva Overview Video.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="js-player" data-plyr-config='{ "autopause": "true" }' playsinline controls>
+                            <source src="./assets/videos/NNT.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="js-player" data-plyr-config='{ "autopause": "true" }' playsinline controls>
+                            <source src="./assets/videos/SailPoint-Intro.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div id="rightArrow"><i class="fa fa-chevron-right"
+                    style="font-size: -webkit-xxx-large; padding-right: 15px;"></i></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- vision-->
+            <div class="vision clearfix">
+                  <div class="col-sm-12">
+                  <div class="heading">
+                        <h2>Vision & Mission</h2>
+                        <p>Our quality vision and mission is creating customer satisfaction through the use of state-of-the-art Information Technologies.</p>
+                    </div>
+                  </div>
+            </div>
+            <footer id="contact">
+                <div class="contact-caption clearfix">
+                     <div id="contact-us" class="contact-caption clearfix">
+                           <div class="contact-heading text-center">
+                               <h2>contact us</h2>
+                           </div>
+                           <div class="col-md-5 contact-info text-left">
+                               <h3>contact information</h3>
+                               <div class="info-detail">
+                                   <ul> </ul>
+                                   <ul> </ul>
+                                   <ul> </ul>
+                                   <ul> </ul>
+                                   <div class="contact-details">
+                                       <div class="contact-address">
+                                           <div class="branch-name">Gulf IT Network Distribution</div>
+                                           <div class="branch-address">Building 11, Dubai Internet City, Dubai,United Arab Emirates</div>
+                                           <ul>
+                                               <li><i class="fa fa-phone"></i><span>Phone:</span> +971 4 454 2058</li>
+                                           </ul>
+                                       </div>
+                                       <div class="contact-address">
+                                           <div class="branch-name">Gulf IT Network Distribution</div>
+                                           <div class="branch-address">Office 602, Sercon Tower 15, Olaya Street, Riyadh, Saudi Arabia</div>
+                                           <ul>
+                                               <li><i class="fa fa-phone"></i><span>Phone:</span> +971 4 454 2058</li>
+                                           </ul>
+                                       </div>
+                                       <div class="contact-address">
+                                           <div class="branch-name">Gulf IT Network Distribution</div>
+                                           <div class="branch-address">1H Unit H13, Century 21 Commercial Offices, Mirqab Mall, Al Nasser St. Doha-Qatar</div>
+                                           <ul>
+                                               <li><i class="fa fa-phone"></i><span>Phone:</span> +971 4 454 2058</li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   <div class="contact_with_us">
+                                       <ul>
+                                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                           <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-6 col-md-offset-1 contact-form">
+                               <h3>leave us a message</h3>
+                               <form class="form"> <input class="name" type="text" placeholder="Name"> <input class="email" type="email" placeholder="Email"> <input class="phone" type="text" placeholder="Phone No:"> <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea> <input class="submit-btn" type="submit" value="SUBMIT"> </form>
+                           </div>
+                       </div>
+                </div>
+        </div>
+        <div class="copyright" style="background: gray;">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-offset-3 col-md-6" style="text-align: center;">
+        <p style="margin: 0; padding: 5">COPYRIGHT © 2019 GULFIT. ALL RIGHTS RESERVED.
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </footer>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content--> 
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                        <h4 class="modal-title">Event</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Description about event.</p>
+                    </div>
+                    <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function () {
+           const players = Array.from(document.querySelectorAll('.js-player')).map(player =>
+              new Plyr(player));
+           players.forEach(function (instance, index) {
+              instance.on('play', function () {
+                 players.forEach(function (instance1, index1) {
+                    if (instance != instance1) {
+                       swiper.autoplay.pause();
+                       instance1.stop();
+                    }
+                 });
+              });
+              instance.on('pause', function () {
+                 swiper.autoplay.start();
+              });
+           });
+           var mainSwiper = new Swiper('#mainSwiper', {
+              autoHeight: true,
+              pagination: {
+                 el: '.swiper-pagination',
+                 clickable: true,
+                 renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + '</span>';
+                 },
+              },
+              navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+              },
+              autoplay: {
+                 delay: 3000,
+                 disableOnInteraction: false
+              },
+           });
+           var swiper = new Swiper('#videoSwiper', {
+              navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+              },
+              effect: 'coverflow',
+              grabCursor: false,
+              centeredSlides: false,
+              autoHeight: true,
+              allowSlidePrev: true,
+              allowSlideNExt: true,
+              slidesPerView: window.screen.width > 720 ? '3' : '1',
+              coverflowEffect: {
+                 rotate: 50,
+                 stretch: 20,
+                 depth: 100,
+                 modifier: 1,
+                 slideShadows: true,
+              },
+              // slideToClickedSlide: true,
+              speed: 600,
+              autoplay: {
+                 delay: 5000,
+                 disableOnInteraction: true
+              },
+              pagination: {
+                 el: '.swiper-pagination',
+                 clickable: true,
+              },
+           });
+           swiper.on('slideChange', function () {
+              players.map(player => player.pause())
+           });
+           $('#leftArrow').on('click', () => {
+              swiper.slidePrev(600);
+           })
+           $('#rightArrow').on('click', () => {
+              swiper.slideNext(600);
+           })
+        });
+    </script>
 </html>

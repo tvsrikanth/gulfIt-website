@@ -3,11 +3,13 @@
   padding: 5px;
   justify-content: center;
 }
-.event-list a{
- color: #fff;
- padding-right: 50px;
- font-weight: bold;
+
+.event-list a {
+  color: #fff;
+  padding-right: 50px;
+  font-weight: bold;
 }
+
 .main-container .navbar-default {
   background-color: #fff;
   border-color: #fff;
@@ -15,104 +17,82 @@
 }
 .main-container .menu-bar .navbar-nav li > a {
  color: #49a2db;
- transition: all .7s ease 0s;
- -webkit-transition: all .7s ease 0s;
+ font-size: 16px;
+}
+.main-container .menu-bar .navbar-nav li > a.active {
+  font-weight: 600;
 }
 .main-container .menu-bar .navbar-nav li > a:hover {
- color: #999;
-}
+ color: #fff;
 
+}
+.menu-bar li:hover {
+  background: #49a2db;
+}    
 .menu-bar li > a:hover {
  color: #fff;
 }
-.submenu ul > li {
+.submenu ul>li {
   float: left;
   list-style: none;
   border-right: 2px solid #15a1db;
   background-color: #29557e;
   padding: 2px 5px;
 }
+
 .submenu ul {
- border-left: 2px solid #15a1db;
- padding: 0;
- margin-right: 10px;
+  border-left: 2px solid #15a1db;
+  padding: 0;
+  margin-right: 10px;
 }
-.submenu ul > li a {
- text-decoration: none;
- padding: 5px;
- font-size: 11px;
- color: #fff;
+
+.submenu ul>li a {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 11px;
+  color: #fff;
 }
+
 .item img {
-max-width: 100%;
+  max-width: 100%;
   height: auto;
-} 
+}
+
 .carousel.slide {
   margin-top: -5px;
 }
+
 .footer-content {
   background: #e2e2e2;
   padding: 10px;
 }
+
 .footer-content h5 {
   display: inline-block;
   border-bottom: 2px solid #15a1db;
 }
+
 .footer-content ul {
   display: flex;
   justify-content: space-between;
 }
+
 .contact-us-list a {
   color: #15a1db;
 }
+
 .contact-us-list a:hover {
   color: #29557e;
 }
+
 .main-container .carousel-caption {
   bottom: 35%;
-} 
+}
+
 .video-list {
   background: url("../images/pattern.jpg");
   padding-bottom: 40px;
 }
-.video-list-carousel {
-  padding: 30px 55px 55px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.video-list .carousel-control{
-  width: 0;
-}
-.video-list .carousel-control.left {
-  left: -10px;
-}
-.video-list .carousel-control.right {
-  right: -15px;
-}
-.video-list .glyphicon.glyphicon-chevron-left, .video-list .glyphicon.glyphicon-chevron-right {
-font-size: 18px;
-padding: 5px;
-background: #fff;
-border-radius: 50%;
-color: transparent;
-margin-right: 0;
-}
-.video-list .glyphicon.glyphicon-chevron-left{
-  left: -15px;
-}
-.video-list .glyphicon.glyphicon-chevron-right{
-  right: -18px;
-}
-.video-carousel-header {
-  padding-top: 20px;
-  font-size: 25px; 
-  color: #fff;
-  font-weight: 600;
-  text-align: center;
-}
-
-
-
 
 .all-prod-img {
   width: 100%;
@@ -125,6 +105,7 @@ margin-right: 0;
 .all-prod-content {
   background-color: #f2f3f3;
   padding: 10px 25px;
+  min-height: 130px;
 }
 .all-prod-list a:hover {
   text-decoration: none !important;
@@ -135,57 +116,72 @@ margin-right: 0;
 .all-prod-list .prod-content {
   border: 1px solid #ccc;
 }
-.all-prod-title {
+.all-prod-title, .about-us-title, .partners-title {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.all-prod-title p{
+.all-prod-title p, .about-us-title p, .partners-title p{
   color: #15a1db;
   display: inline-block;
   padding-bottom: 3px;
   font-weight: 600;
   border-bottom: 1px solid #F00;
+  font-size: 16px;
 }
 .all-prod-outer {
   margin-top: 25px;
 }
+.partners-content {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
 .contact-caption {
   background: #3a9dca;
   border-top: 1px solid #13849c;
+  padding-bottom: 10px;
 }
+
 .contact-heading h2 {
   color: #fff;
   font-size: 35px;
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .contact-info {
   padding-left: 40px;
 }
+
 .info-detail {
   border-top: 1px solid #53cde5;
   padding-top: 15px;
 }
+
 .contact-info ul {
   margin: 0;
   padding: 0;
 }
+
 .contact-info ul li {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: #fff;
   list-style: none;
 }
+
 .contact-info i.fa {
   font-size: 16px;
   padding-right: 12px;
   width: 25px;
   height: 38px;
 }
+
 .contact-info ul li span {
   font-weight: bold;
-} 
-.contact-info h3, .contact-form h3 {
+}
+
+.contact-info h3,
+.contact-form h3 {
   padding-left: 0;
   font-size: 21px;
   color: #fff;
@@ -195,12 +191,14 @@ margin-right: 0;
   padding-bottom: 12px;
   margin-bottom: 0;
 }
+
 .form {
   border-top: 1px solid #53cde5;
   padding-top: 15px;
   text-align: right;
 }
-.contact-form input {
+
+.contact-form input,  .contact-form select{
   width: 100%;
   height: 40px;
   background: #fff;
@@ -211,6 +209,18 @@ margin-right: 0;
   border: 0;
   margin-bottom: 12px;
 }
+.partners-info {
+  margin-bottom: 30px;
+}
+.partners-info .contact-form input {
+  margin-bottom: 20px;
+}
+.contact-caption.partners-info {
+  background: #a1a1a1;
+}
+.contact-form select {
+  color: #747374;
+}
 .contact-form textarea {
   font-family: 'Open Sans', sans-serif;
   padding: 12px;
@@ -219,6 +229,7 @@ margin-right: 0;
   border: 0;
   margin-bottom: 12px;
 }
+
 .contact_with_us ul li i {
   font-size: 1em;
   line-height: 1.3em;
@@ -232,6 +243,46 @@ margin-right: 0;
   text-align: center;
   transition: all 0.3s;
 }
+.about-us-content p {
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+}
+.about-us-outer {
+  margin-top: 25px;
+  margin-bottom: 25px; 
+}
+.vision .heading {
+  text-align: center;
+}
+.vision .heading h2{
+  padding: 0 12px;
+  position: relative;
+  display: inline-block;
+}
+
+.heading h2:before, .heading h2:after {
+  content: ' ';
+  width: 70%;
+  position: absolute;
+  border-width: 1px;
+  border-color: #bbb;
+}
+.vision .heading h2:before, .vision .heading h2:after {
+  top: 17px;
+  border-bottom-style: solid;
+}
+.vision .heading h2:before {
+  right: 100%;
+}
+.vision .heading h2:after {
+  left: 100%;
+}
+.contact-address {
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 15px;
+}
+
 @media(min-width:768px) {
     .menu-bar .navbar-nav, .submenu .nav-list {
       float:right
@@ -253,31 +304,29 @@ margin-right: 0;
 
 @media(max-width: 768px) {
   .logo img {
-    width: 100px;  
+    width: 100px;
   }
+
   .main-container .navbar-brand {
     padding-top: 8px;
-  }
-  .video-list-carousel {
-    padding: 20px 40px 45px;
   }
 }
 
 @media(max-width: 992px) {
-  .main-container .carousel-inner .item img{
+  .main-container .carousel-inner .item img {
     height: auto;
   }
+
   .main-container .carousel-inner .item {
     padding: 0;
   }
 }
+
 @media(min-width: 992px) {
   .main-container .carousel-inner .item img {
     height: auto;
   }
-  .multi-item-carousel .carousel-inner .item img {
-    height: auto;
-  }
+
 }
 
 @media all and (transform-3d), (-webkit-transform-3d) {

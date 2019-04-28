@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gulf It</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <header id="navigation">
+            </header>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 partners-title">
+                            <p>Partners</p>
+                        </div>
+                    </div>
+                    <div class="partners-content">
+                        <p>Today’s security and compliance environment is challenging, and no single vendor can solve the entire problem for you. CyberArk understands this, which is why we’ve created a powerful ecosystem of technology and channel partners that can provide you with a complete solution for your privileged account security and compliance requirements.</p>
+                    </div>
+                    
+                    <div class="contact-caption partners-info clearfix">
+                            <div class="contact-heading text-center">
+                                <h2>Become a partner</h2>
+                            </div>
+                            
+                            <div class="col-md-12 contact-form">
+                                <form class="form">
+                                    <div class="col-md-6 contact-form">
+                                    <input class="fname" type="text" placeholder="First Name">
+                                    <input class="lname" type="text" placeholder="Last Name">
+                                    <input class="email" type="email" placeholder="Email Address">
+                                    <input class="job" type="text" placeholder="Job Title">
+                                    <input class="company" type="text" placeholder="Company">
+                                    <input class="webURL" type="text" placeholder="Website URL">
+                                    <input class="phone" type="text" placeholder="Phone Number">
+                                    <select name="data[partner_type]" required="">
+                                            <option value="">Select Partner Type</option>
+                                            <option value="Distributor">Distributor</option>
+                                            <option value="Consultant">Consultant</option>
+                                            <option value="Global Systems Integrator">Global Systems Integrator</option>
+                                            <option value="Solution Provider">Solution Provider</option>
+                                            </select>        
+                                </div>
+                                    
+                                    <div class="col-md-6 contact-form">
+                                    <input class="street" type="text" placeholder="Street">
+                                    <input class="city" type="text" placeholder="City">
+                                    <input class="postal-code" type="text" placeholder="Postal Code">
+                                    <input class="state" type="text" placeholder="State/Province">
+                                    <input class="country" type="text" placeholder="Country">
+                                    <input class="num-sales-people" type="text" placeholder="Number of Sales People">
+                                    <input class="num-tech-delivery" type="text" placeholder="Number of Technical Delivery People">
+                                    <input class="num-tech-delivery" type="text" placeholder="Number of Post Sales Support People">
+                                    </div>
+            <div class="col-md-12">
+        <input class="submit-btn" type="submit" value="SEND" style="
+            width: 106px;
+        ">
+        </div>
+                            </form></div>
+                                    
+                                    
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--container--> 
+            </div>
+            <footer id="contact">
+                <div id="contact-us" class="contact-caption clearfix">      
+                </div>
+                <div class="copyright" style="background: gray;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-6" style="text-align: center;">
+                                <p style="margin: 0; padding: 5">COPYRIGHT © 2019 GULFIT. ALL RIGHTS RESERVED.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="../js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).ready(function(){
+         $('.menu-bar .active').each(function() {
+            $(this).removeClass();
+         });
+         $('.menu-bar .partners').each(function() {
+            $(this).find('a').addClass('active');
+            $(this).find('a').attr("href", "javascript:void(0)");
+         })
+       });
+        });
+    </script>
+</html>
