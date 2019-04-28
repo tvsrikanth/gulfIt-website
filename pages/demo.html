@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gulf It</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <header id="navigation">
+            </header>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 partners-title">
+                            <p>Demo</p>
+                        </div>
+                    </div>
+                    <div class="partners-content">
+                        <p>Today’s security and compliance environment is challenging, and no single vendor can solve the entire problem for you. CyberArk understands this, which is why we’ve created a powerful ecosystem of technology and channel partners that can provide you with a complete solution for your privileged account security and compliance requirements.</p>
+                    </div>
+                    
+                    <div class="contact-caption demo-request-info clearfix">
+                            <div class="contact-heading text-center">
+                                <h2>Request a demo</h2>
+                            </div>
+                            
+                            <div class="col-md-12 contact-form">
+                                <form class="form">
+                                    <div class="col-md-6 contact-form">
+                                    <input class="fname" type="text" placeholder="First Name">
+                                    <input class="lname" type="text" placeholder="Last Name">
+                                    <input class="email" type="email" placeholder="Email Address">
+                                    <input class="job" type="text" placeholder="Job Title">
+                                    <input class="company" type="text" placeholder="Company Name">                
+                                </div>
+                                    
+                                    <div class="col-md-6 contact-form">
+                                    <select name="data[partner_type]" required="">
+                                        <option value="">Select Role</option>
+                                    </select>
+                
+                                    <input class="country" type="text" placeholder="Country">
+                                    <select name="data[partner_type]" required="">
+                                            <option value="">Select Product</option>
+                                        </select>
+                                    <input class="phone" type="text" placeholder="Phone Number">
+                                    <textarea class="message" name="message" id="message" cols="30" rows="3" placeholder="Comments"></textarea>
+            <div class="col-md-12">
+        <input class="submit-btn" type="submit" value="SUBMIT" style="
+            width: 106px;
+        ">
+        </div>
+                            </form></div>
+                                    
+                                    
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--container--> 
+            </div>
+            <footer id="contact">
+                <div id="contact-us" class="contact-caption clearfix">      
+                </div>
+                <div class="copyright" style="background: gray;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-6" style="text-align: center;">
+                                <p style="margin: 0; padding: 5">COPYRIGHT © 2019 GULFIT. ALL RIGHTS RESERVED.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="../js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).ready(function(){
+         $('.menu-bar .active').each(function() {
+            $(this).removeClass();
+         });
+         $('.menu-bar .demo').each(function() {
+            $(this).find('a').addClass('active');
+            $(this).find('a').attr("href", "javascript:void(0)");
+         })
+       });
+        });
+    </script>
+</html>
