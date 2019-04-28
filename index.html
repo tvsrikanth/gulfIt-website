@@ -326,23 +326,28 @@
                  swiper.autoplay.start();
               });
            });
-           var mainSwiper = new Swiper('#mainSwiper', {
-              autoHeight: true,
-              pagination: {
-                 el: '.swiper-pagination',
-                 clickable: true
-              },
-              navigation: {
-                 nextEl: '.swiper-button-next',
-                 prevEl: '.swiper-button-prev',
-              },
-              speed: 600, 
-              autoplay: {
-                 delay: 3000,
-                 disableOnInteraction: false
-              },
-           });
+           var swiper = new Swiper('#mainSwiper', {
+                autoHeight: true,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                effect: 'fade',
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false
+                },
+            });
            var swiper = new Swiper('#videoSwiper', {
+               slidesPerView: 1,
+               loop: true,
               effect: 'coverflow',
               grabCursor: false,
               centeredSlides: false,

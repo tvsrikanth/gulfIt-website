@@ -339,9 +339,11 @@ color: #d36ffe;
   .logo img {
     width: 100px;
   }
-
   .main-container .navbar-brand {
     padding-top: 8px;
+  }
+  .heading h2:before, .heading h2:after  {
+    width: 20%;
   }
 }
 
