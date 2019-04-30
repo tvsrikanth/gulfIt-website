@@ -361,7 +361,9 @@ color: #d36ffe;
   .main-container .carousel-inner .item img {
     height: auto;
   }
-
+  .animation-text.left-text h1, .animation-text.left-text h3, .animation-text.right-text h3 {
+    font-size: 45px;
+  }
 }
 
 @media all and (transform-3d), (-webkit-transform-3d) {
