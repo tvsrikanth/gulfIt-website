@@ -301,8 +301,6 @@
 }
 .swiper-slide-active .animation-text.left-text {
   text-align: left;
-  bottom: 40px;
-  left: 70px;
 }
 .animation-text.left-text h1, .animation-text.left-text h3 {
   margin: 0;
