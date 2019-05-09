@@ -267,7 +267,11 @@
   position: relative;
   display: inline-block;
 }
-
+.video-carousel-header {
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+}
 .heading h2:before, .heading h2:after {
   content: ' ';
   width: 70%;

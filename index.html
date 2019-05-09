@@ -20,7 +20,7 @@
         <style>
             #videoSwiper.swiper-container {
             width: 100%;
-            padding-top: 50px;
+            padding-top: 15px;
             padding-bottom: 50px;
             }
             .swiper-slide {
@@ -88,7 +88,7 @@
             }
             .product-list {
                 padding: 45px 0px;
-                border-top: 1px solid red;
+                border-bottom: 1px solid red;
             }
         </style>
     </head>
@@ -178,6 +178,9 @@
             </div>
             <!-- Swiper -->
             <div id="videoSwiper" class="swiper-container video-list">
+                <div class="video-carousel-header">
+                    <p>Product Intro</p>
+                </div>
                 <div id="leftArrow"><i class="fa fa-chevron-left" style="font-size: -webkit-xxx-large;padding-left: 15px"></i>
                 </div>
                 <div class="swiper-wrapper">
@@ -227,16 +230,7 @@
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
-            <!-- vision-->
-            <div class="vision clearfix">
-                  <div class="col-sm-12">
-                  <div class="heading">
-                        <h2>Vision & Mission</h2>
-                        <p>Our quality vision and mission is creating customer satisfaction through the use of state-of-the-art Information Technologies.</p>
-                    </div>
-                  </div>
-            </div>
-            <!-- prduct list-->
+            <!-- product list-->
             <div class="swiper-container product-list">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="http://gulfitd.com/uploadfolder/imperva.jpg" width="100%"></div>
@@ -253,6 +247,15 @@
                 <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+              </div>
+              <!-- vision-->
+            <div class="vision clearfix">
+                    <div class="col-sm-12">
+                    <div class="heading">
+                          <h2>Vision & Mission</h2>
+                          <p>Our quality vision and mission is creating customer satisfaction through the use of state-of-the-art Information Technologies.</p>
+                      </div>
+                    </div>
               </div>
             <footer id="contact">
                 <div class="contact-caption clearfix">
@@ -343,13 +346,13 @@
               instance.on('play', function () {
                  players.forEach(function (instance1, index1) {
                     if (instance != instance1) {
-                       swiper.autoplay.pause();
+                        swiperVideo.autoplay.pause();
                        instance1.stop();
                     }
                  });
               });
               instance.on('pause', function () {
-                 swiper.autoplay.start();
+                swiperVideo.autoplay.start();
               });
            });
            var swiper = new Swiper('#mainSwiper', {
@@ -371,7 +374,7 @@
                     disableOnInteraction: false
                 },
             });
-           var swiper = new Swiper('#videoSwiper', {
+           var swiperVideo = new Swiper('#videoSwiper', {
                slidesPerView: 1,
                loop: true,
               effect: 'coverflow',
@@ -399,17 +402,17 @@
                  clickable: true,
               },
            });
-           swiper.on('slideChange', function () {
+           swiperVideo.on('slideChange', function () {
               players.map(player => player.pause())
            });
            $('#leftArrow').on('click', () => {
-              swiper.slidePrev(600);
+            swiperVideo.slidePrev(600);
            });
            $('#rightArrow').on('click', () => {
-              swiper.slideNext(600);
+            swiperVideo.slideNext(600);
            });
 
-           var swiper = new Swiper('.product-list', {
+           var swiperIcon = new Swiper('.product-list', {
                 autoHeight: true,
                 slidesPerView: 5,
                 spaceBetween: 30,
